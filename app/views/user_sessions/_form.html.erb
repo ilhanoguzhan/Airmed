@@ -1,0 +1,81 @@
+<div id="departure">
+		<div class="fixed">
+			<div id="service-types">
+				<div class="service-type-airambulance">
+
+				</div>
+			</div><!-- #service-types -->
+
+			<div id="process-titles">
+				<div class="process-title-contact">
+					<ul>
+						<li class="process-schedule"><a href="index.html" title="">1-SCHEDULE</a></li>
+						<li class="process-patient"><a href="patient.html" title="">2-PATIENT</a></li>
+						<li class="process-contact"><a href="contact-login.html" title="">3-CONTACT</a></li>
+						<li class="process-submit"><a href="submit.html" title="">4-SUBMIT</a></li>
+					</ul>
+				</div>
+			</div><!-- #process-titles -->
+
+			<div class="clear"></div>
+
+			<div id="process-content">
+				<%= form_for(@user_session, :html => { :class => "niceform" }) do |f| %>
+					<fieldset class="contact-login">
+						<legend><strong>AMC GOLD</strong> PASSPORT</legend>
+
+						<dl>
+							<dt><label for="mail">E-MAIL</label></dt>
+							<dd><%= f.text_field :email, :value => "E-Mail" %></dd>
+						</dl>
+
+						<dl>
+							<dt><label for="password">PASSWORD</label></dt>
+							<dd><%= f.password_field :password, :value => "password" %></dd>
+						</dl>
+
+						<dl>
+							<div class="forgot-password">
+								<%= link_to 'Forgot your password?', new_user_session_path %>
+							</div>
+
+							<div class="login">
+									 <%= f.submit("LOGIN") %>
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+					</fieldset><!-- fieldset -->
+
+					<fieldset class="contact-join">
+						<legend><strong>DON'T HAVE AMC PASSWORD YET, <span>JOIN TODAY!</span></strong></legend>
+
+						<dl>
+							<div class="join-today">
+								<ul>
+									<li>- Special Agent for your case</li>
+									<li>- 24/7 Instant Communication</li>
+									<li>- Document Upload</li>
+									<li>- Operation Track</li>
+									<li>- Full Online Management</li>
+								</ul>
+							</div>
+						</dl>
+                     <% end %>
+						<dl>
+							<div class="join">
+                                    <form action="<%= new_user_path %>" method="get" class="niceform">
+                                               <input type="submit"/>
+                                            </form>
+							</div>
+						</dl>
+					</fieldset><!-- fieldset -->
+
+					<div class="clear"></div>
+
+
+			</div><!-- #process-content -->
+
+			<div class="clear"></div>
+		</div><!-- .fixed -->
+	</div><!-- #departure -->

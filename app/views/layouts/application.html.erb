@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>AirMed CSS / xHTML Template [Patient Form]</title>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="imagetoolbar" content="no" />
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../css/style.css" media="screen" />
+	<link rel="stylesheet" href="../css/niceforms-default.css" media="screen" />
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="../css/ie7.css" media="screen" />
+	<![endif]-->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../js/niceforms.js"></script>
+	<script type="text/javascript" src="../js/cufon-yui.js"></script>
+	<script type="text/javascript" src="../js/Pill_Gothic_600mg_Lt_300-Pill_Gothic_600mg_Rg_700.font.js"></script>
+
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+
+<div id="header">
+		<div class="fixed">
+			<div id="logo">
+				<%= link_to 'AirMedCenter', new_welcome_path %>
+			</div><!-- #logo -->
+
+			<div id="language-selector">
+
+			</div><!-- #language-selector -->
+
+			<div id="guest-live-chat">
+				<a href="../javascript:;" title="Live Chat">Live Chat</a>
+			</div><!-- #guest-live-chat -->
+
+			<div class="clear"></div>
+
+			<div id="menu">
+				<ul>
+					<li class="menu-left-corner"></li>
+					<li><a href="../index.html" title="">HOME</a></li>
+					<li><a href="../about-us.html" title="">ABOUT US</a></li>
+					<li><a href="../services.html" title="">SERVICES</a></li>
+					<li><a href="../assistance.html" title="">ASSISTANCE</a></li>
+					<li><a href="../contact.html" title="">CONTACT</a></li>
+					<li class="menu-right-corner"></li>
+
+					<li class="menu-login">
+						<a href="../javascript:;" title="Login" class="menu-login-link">Login</a>
+
+						<ul id="loginbox">
+							<form method="post" action="vars.php" id="loginform" name="loginform">
+								<li class="login-username">
+									<input type="text" tabindex="10" class="input" id="user_login" name="log" value="Username" onblur="if (this.value == '') {this.value = 'Username';}"  onfocus="if (this.value == 'Username') {this.value = '';}">
+								</li>
+
+								<li class="login-password">
+									<input type="password" tabindex="20" class="input" id="user_pass" name="pwd" value="Password" onblur="if (this.value == '') {this.value = 'Password';}"  onfocus="if (this.value == 'Password') {this.value = '';}">
+								</li>
+
+								<div class="clear"></div>
+
+								<li class="login-forgot">
+									<a href="../javascript:;" title="Forgot Password">Forgot Password</a>
+								</li>
+
+								<li class="login-submit">
+									<input type="submit" tabindex="100" value="OK" class="button-primary" id="wp-submit" name="wp-submit">
+								</li>
+
+								<div class="clear"></div>
+							</form>
+						</ul><!-- #loginbox -->
+					</li>
+				</ul>
+			</div><!-- #menu -->
+
+			<div class="clear"></div>
+		</div><!-- .fixed -->
+	</div><!-- #header -->
+
+<%= yield %>
+
+	<div id="footer">
+		<div class="fixed">
+			<ul class="navbar">
+				<li><a href="../javascript:;" title="">About us</a></li>
+				<li><a href="../javascript:;" title="">About AirMedCenter</a></li>
+				<li><a href="../javascript:;" title="">How Does It Work</a></li>
+				<li><a href="../javascript:;" title="">Get the button!</a></li>
+				<li><a href="../javascript:;" title="">Frequently asked</a></li>
+			</ul><!-- .navbar #1 -->
+
+			<ul class="navbar">
+				<li><a href="../javascript:;" title="">Shops</a></li>
+				<li><a href="../javascript:;" title="">Community guidelines</a></li>
+				<li><a href="../javascript:;" title="">iPhone Applications</a></li>
+				<li><a href="../javascript:;" title="">Contact us</a></li>
+				<li><a href="../javascript:;" title="">Press</a></li>
+			</ul><!-- .navbar #2 -->
+
+			<ul class="navbar">
+				<li><a href="../javascript:;" title="">Online Shops</a></li>
+				<li><a href="../javascript:;" title="">Community guidelines</a></li>
+				<li><a href="../javascript:;" title="">iPhone Applications</a></li>
+				<li><a href="../javascript:;" title="">Contact us</a></li>
+				<li><a href="../javascript:;" title="">Press</a></li>
+			</ul><!-- .navbar #3 -->
+
+			<ul class="footer-menu">
+				<li><a href="../javascript:;" title="">HOME</a></li>
+				<li class="fm-seperator">-</li>
+				<li><a href="../javascript:;" title="">SITE MAP</a></li>
+				<li class="fm-seperator">-</li>
+				<li><a href="../javascript:;" title="">TERM OF USE</a></li>
+				<li class="fm-seperator">-</li>
+				<li><a href="../javascript:;" title="">PROVACY POLICY</a></li>
+				<li class="fm-seperator">-</li>
+				<li><a href="../javascript:;" title="">CONTACT US</a></li>
+			</ul><!-- .footer-menu -->
+
+			<div class="copyright">
+				<p>Copyright AirMedCenter 2011</p>
+
+				<p class="phone">+90 <strong>(212)</strong> 300 2030</p>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="mini-logo">
+				<a href="../index.html" title="AirMedCenter Home Page">AirMedCenter</a>
+			</div>
+		</div><!-- .fixed -->
+	</div><!-- #footer -->
+</body>
+</html>

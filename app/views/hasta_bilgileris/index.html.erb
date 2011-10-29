@@ -1,0 +1,55 @@
+<h1>Listing hasta_bilgileris</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Dateofbirth</th>
+    <th>Diagnosis</th>
+    <th>Operationdate</th>
+    <th>Hospitalname</th>
+    <th>Organization</th>
+    <th>Website</th>
+    <th>Telephone</th>
+    <th>Adress</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th>Docsubject</th>
+    <th>Doclink</th>
+    <th>Aditionalinfo</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hasta_bilgileris.each do |hasta_bilgileri| %>
+  <tr>
+    <td><%= hasta_bilgileri.name %></td>
+    <td><%= hasta_bilgileri.surname %></td>
+    <td><%= hasta_bilgileri.dateOfBirth %></td>
+    <td><%= hasta_bilgileri.diagnosis %></td>
+    <td><%= hasta_bilgileri.operationDate %></td>
+    <td><%= hasta_bilgileri.hospitalName %></td>
+    <td><%= hasta_bilgileri.organization %></td>
+    <td><%= hasta_bilgileri.webSite %></td>
+    <td><%= hasta_bilgileri.telephone %></td>
+    <td><%= hasta_bilgileri.adress %></td>
+    <td><%= hasta_bilgileri.city %></td>
+    <td><%= hasta_bilgileri.country %></td>
+    <td><%= hasta_bilgileri.state %></td>
+    <td><%= hasta_bilgileri.zipCode %></td>
+    <td><%= hasta_bilgileri.docSubject %></td>
+    <td><%= hasta_bilgileri.docLink %></td>
+    <td><%= hasta_bilgileri.aditionalInfo %></td>
+    <td><%= link_to 'Show', hasta_bilgileri %></td>
+    <td><%= link_to 'Edit', edit_hasta_bilgileri_path(hasta_bilgileri) %></td>
+    <td><%= link_to 'Destroy', hasta_bilgileri, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hasta bilgileri', new_hasta_bilgileri_path %>

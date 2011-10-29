@@ -1,0 +1,251 @@
+	<div id="home-departure">
+		<div class="fixed">
+			<ul id="departure-menu">
+				<li><a href="javascript:;" class="active" title="depcontent_1">AIR  AMBULANCE</a></li>
+				<li><a href="javascript:;" title="depcontent_2">MEDICAL ESCORT</a></li>
+				<li><a href="javascript:;" title="depcontent_3">COMMERCIAL STRETCHER</a></li>
+				<div class="clear"></div>
+			</ul><!-- #departure-menu -->
+
+			<div class="departure-content" id="depcontent_1">
+				<%= form_for(@welcome, :html => { :class => "niceform" }) do |f| %>
+					<fieldset class="depfield">
+						<legend><strong>DEPARTURE</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :departureCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :departureCountry, :value => "Country" %>
+							</dd>
+						</dl>
+					</fieldset>
+
+					<div class="departure-description">
+						<div class="departure-icon-aa"></div>
+						<div class="departure-description-text">
+							AIR AMBULANCE SERVICE
+						</div>
+
+						<div class="departure-submit">
+                          <!--<-% f.text_field :serviceType => "Air Ambulance" %> -->
+							<%= f.submit("Create A Request") %>
+						</div>
+					</div>
+
+					<fieldset class="arvfield">
+						<legend><strong>ARRIVAL</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :arrivalCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :arrivalCountry, :value => "Country" %>
+							</dd>
+						</dl>
+					</fieldset>
+                    <% end %>
+
+				<div class="clear"></div>
+			</div><!-- .departure-content #1 -->
+
+			<div class="departure-content" id="depcontent_2">
+                    <%= form_for(@welcome, :html => { :class => "niceform" }) do |f| %>
+					<fieldset class="depfield">
+						<legend><strong>DEPARTURE</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :departureCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :departureCountry, :value => "Country" %>
+							</dd>
+						</dl>
+					</fieldset>
+
+					<div class="departure-description">
+						<div class="departure-icon-me"></div>
+						<div class="departure-description-text">
+							MEDICAL ESCORT SERVICE
+						</div>
+
+						<div class="departure-submit">
+                          <!--<-% f.text_field :serviceType => "Medical Escord" %> -->
+							<%= f.submit("Create A Request") %>
+						</div>
+					</div>
+
+					<fieldset class="arvfield">
+						<legend><strong>ARRIVAL</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :arrivalCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :arrivalCountry, :value => "Country"  %>
+							</dd>
+						</dl>
+					</fieldset>
+                  <% end %>
+
+				<div class="clear"></div>
+			</div><!-- .departure-content #2 -->
+
+			<div class="departure-content" id="depcontent_3">
+                    <%= form_for(@welcome, :html => { :class => "niceform" }) do |f| %>
+					<fieldset class="depfield">
+						<legend><strong>DEPARTURE</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :departureCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :departureCountry, :value => "Country"  %>
+							</dd>
+						</dl>
+					</fieldset>
+
+					<div class="departure-description">
+						<div class="departure-icon-cs"></div>
+						<div class="departure-description-text">
+							COMMERCIAL STRETCHER SERVICE
+						</div>
+
+						<div class="departure-submit">
+                          <!--<-% f.text_field :serviceType => "Commercial Stretcher" %> -->
+							<%= f.submit("Create A Request") %>
+						</div>
+					</div>
+
+					<fieldset class="arvfield">
+						<legend><strong>ARRIVAL</strong>LOCATION</legend>
+						<dl>
+							<dd><%= f.text_field :arrivalCity, :value => "City" %></dd>
+						</dl>
+
+						<dl>
+							<dd>
+								<%= f.text_field :arrivalCountry, :value => "Country"  %>
+							</dd>
+						</dl>
+					</fieldset>
+                  <% end %>
+
+				<div class="clear"></div>
+			</div><!-- .departure-content #3 -->
+		</div><!-- .fixed -->
+	</div><!-- #home-departure -->
+
+
+	<div id="home-container">
+		<div class="fixed">
+			<div class="home-wrapper">
+				<div class="home-entry-box">
+					<div class="entry-image">
+						<img src="../images/ww-network.jpg" title="" alt="" />
+					</div>
+
+					<div class="entry-text">
+						<h4><a href="#" alt="">Worldwide Network</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #1 -->
+
+				<div class="home-entry-box">
+					<div class="entry-image">
+						<img src="../images/lm-teams.jpg" title="" alt="" />
+					</div>
+
+					<div class="entry-text">
+						<h4><a href="#" alt="">Licensed Medical Teams</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #2 -->
+
+				<div class="home-entry-box">
+					<div class="entry-image">
+						<img src="../images/op-tracking.jpg" title="" alt="" />
+					</div>
+
+					<div class="entry-text">
+						<h4><a href="#" alt="">Operation Tracking</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #3 -->
+
+				<div class="clear"></div>
+			</div><!-- .home-wrapper -->
+
+			<div class="home-wrapper2">
+				<div class="home-entry-box">
+					<div class="entry-text">
+						<h4><a href="#" alt="">Document Upload</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #4 -->
+
+				<div class="home-entry-box">
+					<div class="entry-text">
+						<h4><a href="#" alt="">24/7 Instant Communication</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #5 -->
+
+				<div class="home-entry-box">
+					<div class="entry-text">
+						<h4><a href="#" alt="">The Best Price</a></h4>
+
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ulamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+
+						<p class="read-more">
+							<a href="#" alt="">Read More</a>
+						</p>
+					</div>
+				</div><!-- .home-entry-box #6 -->
+
+				<div class="clear"></div>
+			</div><!-- .home-wrapper2 -->
+		</div><!-- .fixed -->
+	</div><!-- #home-container -->

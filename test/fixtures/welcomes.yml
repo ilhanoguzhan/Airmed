@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  serviceType: MyString
+  departureCity: MyString
+  departureCountry: MyString
+  arrivalCity: MyString
+  arrivalCountry: MyString
+
+two:
+  serviceType: MyString
+  departureCity: MyString
+  departureCountry: MyString
+  arrivalCity: MyString
+  arrivalCountry: MyString

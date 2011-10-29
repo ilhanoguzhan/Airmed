@@ -1,0 +1,629 @@
+/*Defaults Styling*/
+	/*
+	body {font:12px/17px Arial, Helvetica, sans-serif; color:#333; background:#ccc; padding:40px 20px 20px 20px;}
+	#footer {font-size:11px;}
+	#container {width:700px; margin:0 auto;}
+	*/
+input, textarea, select {font:12px/12px Arial, Helvetica, sans-serif; padding:0;}
+
+fieldset {
+	background: #ffffff;
+	border: none;
+	border-bottom: 3px solid #c4c8c9;
+	margin: 0 0 50px 0;
+	padding: 0;
+	}
+
+fieldset.action, fieldset.joinaction {
+	background: transparent;
+	border: none;
+	margin: -20px 0 0 0;
+	padding: 0 0 40px 0;
+	}
+
+fieldset.action input, fieldset.joinaction input {
+	background: transparent url('../images/continue-button.png') no-repeat center center;
+	border: none;
+	display: block;
+	float: right;
+	padding: 0px;
+	width: 180px;
+	height: 50px;
+	cursor:pointer;
+	text-indent: -500cm;
+	}
+
+fieldset.joinaction input {
+	background: transparent url('../images/create-button.png') no-repeat center center;
+	width: 225px;
+	}
+	
+legend {
+	background: transparent url('../images/legend-bg.jpg') no-repeat 0 0;
+	border: none;
+	margin: 0;
+	padding: 0 40px;
+	width: 800px;
+	font: bold 17px/47px Calibri, Arial, Helvetica, sans-serif;
+	}
+
+label {
+	font: bold 11px Helvetica, sans-serif;
+	color: #b60021;
+	}
+
+label.opt {
+	margin: 0 0 0 15px;
+	font-size: 14px;
+	color: #4E6F72;
+	}
+
+label.optx {
+	margin: 0 0 0 10px;
+	font: 11px/22px;
+	color: #4E6F72;
+	}
+
+dl {
+	border-bottom: 2px solid #EBF0F3;
+	clear: both;
+	margin: 0;
+	padding: 20px 40px;
+	color: #7a9da0;
+	}
+	
+	.dl-left {
+		float: left;
+		margin: 0 40px 0 0;
+		}
+	
+	.dl-right {
+		float: right;
+		padding: 15px 0 0 0;
+		width: 220px;
+		color: #7a9da0;
+		}
+
+dt {
+	margin: 0 0 5px 0;
+	}
+
+dd {
+	margin: 0;
+	}
+
+
+	.input-1 input {
+		width: 230px;
+		}
+
+	.input-2 input {
+		width: 440px;
+		}
+
+	.input-3 input {
+		width: 240px;
+		}
+
+	.input-4 input {
+		width: 150px;
+		}
+	
+	.input-5 input {
+		width: 205px;
+		}
+		
+	.input-6 input {
+		width: 165px;
+		}
+		
+	.input-7 input {
+		width: 390px;
+		}
+	
+	.select-1 select, .select-2 select, .select-3 select {
+		height: 35px;
+		}
+
+	.select-1 .NFSelect, .select-1 dt {
+		width: 90px !important;
+		}
+
+	.select-1 .NFSelectTarget, .select-1 .NFSelectOptions, .select-1 .NFSelectOptions li {
+		width: 86px !important;
+		}
+
+	.select-2 .NFSelect, .select-2 dt {
+		width: 150px !important;
+		}
+
+	.select-2 .NFSelectTarget, .select-2 .NFSelectOptions, .select-2 .NFSelectOptions li {
+		width: 146px !important;
+		}
+
+	.select-3 .NFSelect, .select-3 dt {
+		width: 180px !important;
+		}
+
+	.select-3 .NFSelectTarget, .select-3 .NFSelectOptions, .select-3 .NFSelectOptions li {
+		width: 176px !important;
+		}
+
+	.textarea-1 textarea {
+		width: 536px;
+		height: 80px;
+		}
+
+	.textarea-2 textarea {
+		width: 456px;
+		height: 80px;
+		}
+	
+	.textarea-3 {
+		margin: 30px 0 0 0;
+		}
+	
+	.textarea-3 textarea {
+		width: 546px;
+		height: 80px;
+		}
+	
+	.file-1 .NFFile {
+		width: 350px;
+		}
+
+
+/* HOME PAGE FORM CSS */
+	fieldset.depfield, fieldset.arvfield {
+		background: #ffffff url('../images/departure-fieldset-bg.png') repeat-x 0 100%;
+		border: none;
+		float: left;
+		margin: 80px 0 0 0;
+		padding: 0 0 10px 0;
+		width: 271px;
+		}
+
+	fieldset.depfield legend, fieldset.arvfield legend {
+		background: #ffffff url('../images/departure-legend-bg.png') no-repeat 0 0;
+		border:none;
+		margin: 0;
+		padding: 0 15px;
+		width: 241px;
+		color: #4e6f72;
+		font: bold 17px/47px Calibri, Arial, Helvetica, sans-serif;
+		}
+
+	fieldset.depfield dl, fieldset.arvfield dl {
+		border: none;
+		clear: both;
+		margin: 15px 0;
+		padding: 0;
+		}
+
+	fieldset.depfield dd, fieldset.arvfield dd {
+		float: none;
+		margin: 0;
+		padding: 0 10px;
+		width: 251px;
+		height: 35px;
+		}
+
+	fieldset.depfield input, fieldset.arvfield input {
+		width: 231px;
+		}
+
+	fieldset.depfield .NFText, fieldset.arvfield .NFText {
+		font: bold 15px/25px Helvetica, sans-serif !important;
+		}
+
+	fieldset.depfield .NFSelect, fieldset.arvfield .NFSelect {
+		width: 251px !important;
+		}
+
+	fieldset.depfield .NFSelectTarget, fieldset.arvfield .NFSelectTarget, fieldset.depfield .NFSelectOptions, fieldset.arvfield .NFSelectOptions, fieldset.depfield .NFSelectOptions li, fieldset.arvfield .NFSelectOptions li {
+		width: 247px !important;
+		}
+
+	fieldset.depfield .NFSelectRight, fieldset.arvfield .NFSelectRight {
+		font: bold 15px/35px Helvetica, sans-serif !important;
+		}
+/* END HOME PAGE FORM CSS */
+
+
+/* CONTACT-LOGIN PAGE FORM CSS */
+	fieldset.contact-login {
+		float: left;
+		width: 340px;
+		margin: 0 40px 70px 0;
+		}
+	
+	fieldset.contact-login legend {
+		border:none;
+		margin: 0;
+		padding: 0 40px;
+		width: 260px;
+		color: #4e6f72;
+		font: bold 17px/47px Calibri, Arial, Helvetica, sans-serif;
+		}
+
+	fieldset.contact-login dl {
+		border: none;
+		clear: both;
+		margin: 20px 0 0 0;
+		padding: 0 40px;
+		}
+		
+		fieldset.contact-login dl:last-child {
+			border-top: 2px solid #EBF0F3;
+			}
+
+	fieldset.contact-login dd {
+		float: none;
+		margin: 0;
+		padding: 0;
+		width: 260px;
+		height: 35px;
+		}
+	
+	fieldset.contact-login input{
+		width: 240px;
+		}
+	
+	
+	fieldset.contact-join {
+		float: left;
+		width: 500px;
+		margin: 0 0 70px 0;
+		}
+	
+	fieldset.contact-join legend {
+		border:none;
+		margin: 0;
+		padding: 0 40px;
+		width: 420px;
+		color: #4e6f72;
+		font: bold 17px/47px Calibri, Arial, Helvetica, sans-serif;
+		}
+	
+		fieldset.contact-join legend span {
+			color: #B60021;
+			}
+	
+	fieldset.contact-join input {
+		margin: -15px auto auto auto;
+		}
+/* END CONTACT-LOGIN PAGE FORM CSS */
+
+/* DASHBOARD FORM CSS */
+	#dbcontent fieldset legend {
+		border: none;
+		margin: 0;
+		padding: 0 10px;
+		width: 455px;
+		color: #4e6f72;
+		font: bold 14px/20px Calibri, Arial, Helvetica, sans-serif;
+		}
+		
+	#dbcontent fieldset dl {
+		border: none;
+		clear: both;
+		padding: 10px 10px;
+		}
+		
+		
+	.reqselections fieldset {
+		border: none;
+		margin: 40px 15px 0px 15px;
+		}
+		
+	.reqselections fieldset dl {
+		padding: 20px 15px;
+		}
+
+
+
+
+
+
+/*##########################################
+Script: Niceforms 2.0
+Theme: StandardBlue
+Author: Lucian Slatineanu
+URL: http://www.emblematiq.com/
+##########################################*/
+
+/*Text inputs*/
+.NFText {
+	background: none;
+	border: none;
+	height: 25px;
+	color: #4e6f72;
+	font: bold 12px/25px Helvetica, sans-serif;
+	vertical-align: middle;
+	}
+
+.NFTextCenter {
+	background: url('../images/input-bg.png') repeat-x 0 0;
+	float: left;
+	margin: 0;
+	padding: 5px 0;
+	height: 25px;
+	line-height: 25px;
+	}
+
+.NFTextLeft, .NFTextRight {
+	float: left;
+	width: 10px;
+	height: 35px;
+	vertical-align: middle;
+	}
+
+.NFTextLeft {
+	background: url('../images/input-left-bg.png') no-repeat 0 0;
+	}
+
+.NFTextRight {
+	background: url('../images/input-right-bg.png') no-repeat 0 0;
+	}
+
+
+/*Radio*/
+.NFRadio {
+	background: url('../images/radio.png') no-repeat 0 0;
+	border: none;
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	z-index: 2;
+	}
+
+/*Checkbox*/
+.NFCheck {
+	background: url('../images/checkbox.png') no-repeat 0 0;
+	border: none;
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	cursor: pointer;
+	z-index:2;
+	}
+
+
+/*Buttons*/ /* -> Needs some changes <- */
+.NFButton {
+	background: url('../images/home-button-bg.png') repeat-x 0 0;
+	border: none;
+	margin: 0;
+	padding: 0 5px 0 0;
+	width: auto;
+	height: 55px;
+	color: #fff;
+	font: 12px/55px Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	vertical-align: middle;
+	cursor: pointer;
+	}
+
+.NFButtonLeft, .NFButtonRight {
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	}
+
+.NFButtonLeft {
+	background: url('../images/home-button-left-bg.png') no-repeat 0 0;
+	}
+
+.NFButtonRight {
+	background: url('../images/home-button-right-bg.png') no-repeat 0 0;
+	}
+
+.departure-submit .NFButtonLeft, .departure-submit .NFButtonRight {
+	width: 35px;
+	height: 55px;
+	}
+
+
+/*Textareas*/
+.NFTextarea {
+	background: none;
+	border: none;
+	margin: 0;
+	font: bold 12px/12px Helvetica, Arial, sans-serif;
+	color: #4E6F72;
+	}
+
+.NFTextareaTop, .NFTextareaBottom {
+	clear: both;
+	float: none;
+	padding-right: 10px;
+	height: 10px;
+	}
+
+.NFTextareaTop {
+	background: url('../images/textarea-tr.png') no-repeat 100% 0;
+	height: 10px;
+	}
+
+.NFTextareaBottom {
+	background: url('../images/textarea-br.png') no-repeat 100% 0;
+	margin-bottom: 5px;
+	}
+
+.NFTextareaTopLeft, .NFTextareaBottomLeft {
+	display: block;
+	width: 10px;
+	height: 10px;
+	}
+
+.NFTextareaTopLeft {
+	background: url('../images/textarea-tl.png') no-repeat 0 0;
+	}
+
+.NFTextareaBottomLeft {
+	background: url('../images/textarea-bl.png') no-repeat 0 0;
+	}
+
+.NFTextareaLeft, .NFTextareaRight, .NFTextareaLeftH, .NFTextareaRightH {
+	float: left;
+	padding-bottom: 5px;
+	}
+
+.NFTextareaLeft, .NFTextareaLeftH {
+	width: 10px;
+	}
+
+.NFTextareaLeft {
+	background: url('../images/textarea-l-off.png') repeat-y 0 0;
+	}
+
+.NFTextareaLeftH {
+	background: url('../images/textarea-l-over.png') repeat-y 0 0;
+	}
+
+.NFTextareaRight, .NFTextareaRightH {
+	
+	}
+
+.NFTextareaRight {
+	background: url('../images/textarea-r-off.png') repeat-y 100% 0;
+	}
+
+.NFTextareaRightH {
+	background: url('../images/textarea-r-over.png') repeat-y 100% 100%;
+	}
+
+
+/*Files*/
+.NFFileButton {
+	background: url('../images/file.png') no-repeat 100% 0;
+	padding-bottom: 0;
+	width: 185px;
+	height: 35px;
+	vertical-align: bottom;
+	cursor: pointer;
+	}
+
+.NFFile {
+	position: relative;
+	margin-bottom: 5px;
+	}
+
+.NFFile input.NFhidden {
+	position: relative;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+	text-align: left;
+	}
+
+.NFFileNew {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	}
+
+
+/*Selects*/
+.NFSelect {
+	height: 35px;
+	position: absolute;
+	border: none;
+	}
+
+.NFSelectLeft {
+	background: url('../images/select-left-bg.png') no-repeat 0 0;
+	float: left;
+	width: 10px;
+	height: 35px;
+	vertical-align: middle;
+	}
+
+.NFSelectRight {
+	background: url('../images/select-right-bg.png') no-repeat 100% 0;
+	width: auto;
+	height: 35px;
+	color: #4e6f72;
+	font: 12px/35px Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	}
+
+.NFSelectTarget {
+	background: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 35px 2px 0 2px;
+	/* margin: 34px 0 0 -15px; */
+	/* padding: 0 0 15px 0; */
+	z-index: 3;
+	}
+
+.NFSelectOptions {
+	background: #707175;
+	position: relative;
+	left: 0;
+	top: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/* margin: 0 0 0 16px; */
+	padding: 5px 0;
+	max-height: 200px;
+	list-style: none;
+	color: #fff;
+	font: 14px/18px Helvetica, Arial, sans-serif;
+	z-index: 4;
+	}
+
+.NFSelectOptions li {
+	}
+
+.NFSelectOptions a {
+	background: none;
+	display: block;
+	padding: 3px 10px;
+	color: #fff;
+	text-decoration: none;
+	}
+
+.NFSelectOptions a.NFOptionActive {
+	background: #464646;
+	}
+
+.NFSelectOptions a:hover {
+	background: #333;
+	}
+
+
+/*Multiple Selects*/
+.NFMultiSelect {border:0; background:none; margin:0;}
+.NFMultiSelectTop, .NFMultiSelectBottom {height:5px; clear:both; float:none; padding-right:10px;}
+.NFMultiSelectTop {background:url(../images/textarea-tr.png) no-repeat 100% 0;}
+.NFMultiSelectBottom {background:url(../images/textarea-br.png) no-repeat 100% 0; margin-bottom:5px;}
+.NFMultiSelectTopLeft, .NFMultiSelectBottomLeft {width:5px; height:5px;}
+.NFMultiSelectTopLeft {background:#f2f2e6 url(../images/textarea-tl.png) no-repeat 0 0;}
+.NFMultiSelectBottomLeft {background:#f2f2e6 url(../images/textarea-bl.png) no-repeat 0 0;}
+.NFMultiSelectLeft, .NFMultiSelectRight, .NFMultiSelectLeftH, .NFMultiSelectRightH {float:left; padding-bottom:5px;}
+.NFMultiSelectLeft, .NFMultiSelectLeftH {width:5px;}
+.NFMultiSelectLeft {background:url(../images/textarea-l-off.png) repeat-y 0 0;}
+.NFMultiSelectLeftH {background:url(../images/textarea-l-over.png) repeat-y 0 0;}
+.NFMultiSelectRight, .NFMultiSelectRightH {padding-right:5px; padding-bottom:0;}
+.NFMultiSelectRight {background:url(../images/textarea-r-off.png) repeat-y 100% 0;}
+.NFMultiSelectRightH {background:url(../images/textarea-r-over.png) repeat-y 100% 0;}
+
+/*Focused*/
+.NFfocused {border: none;}
+/*Hovered*/
+.NFh {background-position: 0 100%;}
+.NFhr {background-position: 100% 100%;}
+/*Hidden*/
+.NFhidden {opacity: 0; z-index: -1; position: relative;}
+/*Safari*/
+select, input, textarea, button {outline:none; resize:none;}

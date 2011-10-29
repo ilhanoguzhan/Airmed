@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Servicetype:</b>
+  <%= @welcome.serviceType %>
+</p>
+
+<p>
+  <b>Departurecity:</b>
+  <%= @welcome.departureCity %>
+</p>
+
+<p>
+  <b>Departurecountry:</b>
+  <%= @welcome.departureCountry %>
+</p>
+
+<p>
+  <b>Arrivalcity:</b>
+  <%= @welcome.arrivalCity %>
+</p>
+
+<p>
+  <b>Arrivalcountry:</b>
+  <%= @welcome.arrivalCountry %>
+</p>
+
+
+<%= link_to 'Edit', edit_welcome_path(@welcome) %> |
+<%= link_to 'Back', welcomes_path %>

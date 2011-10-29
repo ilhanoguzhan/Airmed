@@ -1,0 +1,192 @@
+	<div id="departure">
+		<div class="fixed">
+			<div id="service-types">
+				<div class="service-type-airambulance">
+
+				</div>
+			</div><!-- #service-types -->
+
+			<div id="process-titles">
+				<div class="process-title-contact">
+					<ul>
+						<li class="process-schedule"><a href="index.html" title="">1-SCHEDULE</a></li>
+						<li class="process-patient"><a href="patient.html" title="">2-PATIENT</a></li>
+						<li class="process-contact"><a href="contact-login.html" title="">3-CONTACT</a></li>
+						<li class="process-submit"><a href="submit.html" title="">4-SUBMIT</a></li>
+					</ul>
+				</div>
+			</div><!-- #process-titles -->
+
+			<div class="clear"></div>
+
+			<div id="process-content">
+
+				<%= form_for(@user, :html => { :class => "niceform" }) do |f| %>
+                  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+					<fieldset>
+						<legend><strong>NAME AND ADRESS</strong> INFORMATION</legend>
+
+						<dl>
+							<div class="dl-left input-5">
+								<dt><label for="name">NAME</label></dt>
+								<dd><%= f.text_field :name  %></dd>
+							</div>
+
+							<div class="dl-left input-5">
+								<dt><label for="surname">SURNAME</label></dt>
+								<dd><%= f.text_field :surname  %></dd>
+							</div>
+
+							<div class="dl-left input-5">
+								<dt><label for="organization">ORGANIZATION</label></dt>
+								<dd><%= f.text_field :organization  %></dd>
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+
+						<dl>
+							<div class="dl-left textarea-2">
+								<dt><label for="adress">ADRESS</label></dt>
+								<dd><%= f.text_area :adress  %></dd>
+							</div>
+
+							<div class="clear" style="padding: 0 0 20px 0;"></div>
+
+							<div class="dl-left input-4">
+								<dt><label for="city">CITY</label></dt>
+								<dd><%= f.text_field :city  %></dd>
+							</div>
+
+							<div class="dl-left select-2">
+								<dt><label for="country">COUNTRY</label></dt>
+								<dd>
+									<%= f.text_field :country  %>
+								</dd>
+							</div>
+
+							<div class="dl-left select-2">
+								<dt><label for="state">STATE</label></dt>
+								<dd>
+									<%= f.text_field :state  %>
+								</dd>
+							</div>
+
+							<div class="dl-left input-4">
+								<dt><label for="zip">ZIP / POSTAL CODE</label></dt>
+								<dd><%= f.text_field :zipcode  %></dd>
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+
+						<dl>
+							<strong>First & Last Name:</strong> Please give us your full name, which will ease our communication on your patient transfer organization<br />
+							<strong>E-Mail Address (to be used for sign-in):</strong> That e-mail address will be the main mail address for our communication, however all mails sent to your main mail address will be also copied to your E-Mail Address2.<br />
+							<strong>Password:</strong> You will use that password to sign-in to your account and will be able to follow your file, arrangements, proposals and will also be able to communicate with your agent.
+						</dl>
+					</fieldset><!-- fieldset -->
+
+					<fieldset>
+						<legend><strong>CONTACT</strong>INFORMATION</legend>
+
+						<dl>
+							<div class="dl-left input-5">
+								<dt><label for="email1">MAIN E-MAIL</label></dt>
+								<dd><%= f.text_field :email %></dd>
+							</div>
+
+							<div class="dl-left input-5">
+								<dt><label for="email2">SECONDARY E-MAIL</label></dt>
+								<dd><%= f.text_field :secEMail   %></dd>
+							</div>
+
+							<div class="dl-right">
+								The Email Address must be valid & working to receive an activation code.
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+
+						<dl>
+							<div class="dl-left input-5">
+								<dt><label for="dtphone">DAY TIME PHONE</label></dt>
+								<dd><%= f.text_field :dayTimePhone  %></dd>
+							</div>
+
+							<div class="dl-left input-5">
+								<dt><label for="ntphone">NIGHT TIME PHONE</label></dt>
+								<dd><%= f.text_field :nightTimePhone  %></dd>
+							</div>
+
+							<div class="dl-left input-5">
+								<dt><label for="mphone">MOBILE PHONE</label></dt>
+								<dd><%= f.text_field :mobilePhone  %></dd>
+							</div>
+
+							<div class="clear" style="padding: 0 0 20px 0;"></div>
+
+							<strong>Phone Numbers:</strong> Please give us your day-time, night time and mobile phone numbers. Those numbers will be used in case of any need to reach you.
+
+							<div class="clear"></div>
+						</dl>
+					</fieldset><!-- fieldset -->
+
+					<fieldset>
+						<legend><strong>ACCOUNT</strong>INFORMATION</legend>
+
+						<dl>
+							<div class="dl-left input-2">
+								<dt><label for="email">Username</label></dt>
+								<dd><%= f.text_field :username  %></dd>
+							</div>
+
+							<div class="dl-right">
+								The Email Address must be valid & working to receive an activation code.
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+
+						<dl>
+							<div class="dl-left">
+								<dt><label for="password">PASSWORD</label></dt>
+								<dd><%= f.password_field :password %></dd>
+							</div>
+
+							<div class="dl-right">
+								Password must contain 6 to 14 characters. Alphabetical, number, and punctuation characters only.
+							</div>
+
+							<div class="clear" style="padding: 0 0 20px 0;"></div>
+
+							<div class="dl-left">
+								<dt><label for="password">PASSWORD (AGAIN)</label></dt>
+								<dd><%= f.password_field :password_confirmation %></dd>
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+					</fieldset><!-- fieldset -->
+
+					<fieldset class="joinaction">
+						 <%= f.submit %>
+
+						<div class="clear"></div>
+					</fieldset><!-- fieldset -->
+				<% end %>
+			</div><!-- #process-content -->
+
+			<div class="clear"></div>
+		</div><!-- .fixed -->
+	</div><!-- #departure -->

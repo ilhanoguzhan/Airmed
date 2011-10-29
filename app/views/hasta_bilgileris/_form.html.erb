@@ -1,0 +1,239 @@
+
+	<div id="departure">
+		<div class="fixed">
+			<div id="service-types">
+				<div class="service-type-airambulance">
+				
+				</div>
+			</div><!-- #service-types -->
+			
+			<div id="process-titles">				
+				<div class="process-title-patient">
+					<ul>
+						<li class="process-schedule"><a href="index.html" title="">1-SCHEDULE</a></li>
+						<li class="process-patient"><a href="patient.html" title="">2-PATIENT</a></li>
+						<li class="process-contact"><a href="contact-login.html" title="">3-CONTACT</a></li>
+						<li class="process-submit"><a href="submit.html" title="">4-SUBMIT</a></li>
+					</ul>
+				</div>
+			</div><!-- #process-titles -->
+			
+			<div class="clear"></div>
+			
+			<div id="process-content">
+                <%= form_for(@hasta_bilgileri, :html => { :class => "niceform"} ) do |f| %>
+					<fieldset>
+						<legend><strong>PATIENT</strong>DETAILS</legend>
+						
+						<dl>
+							<div class="dl-left input-1">
+								<dt><label for="name">NAME</label></dt>
+								<dd><%= f.text_field :name %></dd>
+							</div>
+							
+							<div class="dl-left input-1">
+								<dt><label for="surname">SURNAME</label></dt>
+								<dd><%= f.text_field :surname %></dd>
+							</div>
+							
+							<div class="dl-right">
+								<strong>Full Name:</strong> It is very important to have full name of the patient as written at the official ID (passport, driving license, etc)
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left select-1">
+								<dt><label for="dobMonth">DATE OF BIRTH</label></dt>
+								<dd>
+								<%= f.date_select :dateOfBirth, :order => [:month, :day, :year ], :prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }, :start_year => Time.now.year - 110, :end_year => Time.now.year,  :html => { :name => "dobMonth", :id => "dobMonth" } %>
+								</dd>
+							</div>
+							
+							<div class="dl-right">
+								<strong>Full Name:</strong> It is very important to have full name of the patient as written at the official ID (passport, driving license, etc)
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left textarea-1">
+								<dt><label for="diagnosis">DIAGNOSIS</label></dt>
+								<dd><%= f.text_area :diagnosis %></dd>
+							</div>
+							
+							<div class="dl-right">
+								<strong>Full Name:</strong> It is very important to have full name of the patient as written at the official ID (passport, driving license, etc)
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left">
+								<dt><label for="opdate">OPERATION DATE</label></dt>
+								<dd>
+                                  <%= f.radio_button :operationDate,  "Immediate 1-7 day" %><label for="1-30" class="opt">Immediate 1-7 day</label>
+
+								</dd>
+							</div>
+
+							<div class="dl-left">
+								<dt><label for="opdate">&nbsp;</label></dt>
+								<dd>
+									<%= f.radio_button :operationDate,  "Future 1-30 day" %><label for="1-30" class="opt">Future 1-30 day</label>
+								</dd>
+							</div>
+							
+							<div class="dl-right">
+								<strong>Full Name:</strong> It is very important to have full name of the patient as written at the official ID (passport, driving license, etc)
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+					</fieldset><!-- fieldset -->
+					
+					<fieldset>
+						<legend><strong>HOSPITAL</strong> / FACILITY</legend>
+						
+						<dl>
+							<div class="dl-left input-2">
+								<dt><label for="hspname">HOSPITAL NAME</label></dt>
+								<dd><%= f.text_field :hospitalName %></dd>
+							</div>
+							
+							<div class="dl-left input-3">
+								<dt><label for="organization">ORGANIZATION</label></dt>
+								<dd><%= f.text_field :organization %></dd>
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left input-2">
+								<dt><label for="website">WEB SITE</label></dt>
+								<dd><%= f.text_field :webSite %></dd>
+							</div>
+							
+							<div class="dl-left input-3">
+								<dt><label for="telephone">TELEPHONE</label></dt>
+								<dd><%= f.text_field :telephone %></dd>
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left textarea-2">
+								<dt><label for="adress">ADRESS</label></dt>
+								<dd><%= f.text_area :adress %></dd>
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left input-4">
+								<dt><label for="city">CITY</label></dt>
+								<dd><%= f.text_field :city %></dd>
+							</div>
+							
+							<div class="dl-left select-2">								
+								<dt><label for="country">COUNTRY</label></dt>
+								<dd>
+									<%= f.text_field :country %>
+								</dd>
+							</div>
+							
+							<div class="dl-left select-2">
+								<dt><label for="state">STATE</label></dt>
+								<dd>
+									<%= f.text_field :state %>
+								</dd>
+							</div>
+							
+							<div class="dl-left input-4">
+								<dt><label for="zip">ZIP / POSTAL CODE</label></dt>
+								<dd><%= f.text_field :zipCode %></dd>
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<strong>Hospital/Facility Details:</strong> Our medical team would need to call the attending medical team and get more specific medical information, please give contact details of the hospital or the facility. 
+						</dl>
+					</fieldset><!-- fieltset -->
+					
+					<fieldset>
+						<legend><strong>DOCUMENTS</strong>UPLOAD</legend>
+						
+						<dl>
+							<div class="dl-left select-3">								
+								<dt><label for="subject">SUBJECT</label></dt>
+								<dd>
+									<%= f.text_field :docSubject %>
+								</dd>
+							</div>
+							
+							<div class="dl-left file-1">
+								<dt><label for="upload">CHOOSE FILE</label></dt>
+								<dd><input type="file" name="upload" id="upload" /></dd>
+							</div>
+							
+							<div class="clear"></div>
+							
+							<div class="dl-left textarea-3">
+								<dt><label for="adinfo">ADITIONAL INFO</label></dt>
+								<dd><%= f.text_area :aditionalInfo %></dd>
+							</div>
+							
+							<div class="clear"></div>
+						</dl>
+						
+						<dl>
+							<div class="dl-left">
+								<dt><label for="">SUBJECT</label></dt>
+								
+								<div class="added-file-subject">
+									Medical Report
+								</div>
+							</div>
+							
+							<div class="dl-left">
+								<dt><label for="">ADDITIONAL INFO</label></dt>
+								
+								<div class="added-file-info">
+									<span>Kalp.pdf > </span> Lorem Ipsum information or the document would make air transfer information
+								</div>
+							</div>
+							
+							<div class="dl-left">
+								<dt><label for="">&nbsp;</dt>
+								
+								<div class="added-file-remove">
+									<input type="submit" name="remove" id="remove" value="REMOVE" />
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</dl>
+					</fieldset><!-- fieltset -->
+						
+					<fieldset class="action">
+						<%= f.submit %>
+
+						<div class="clear"></div>
+					</fieldset><!-- fieltset -->
+                 <% end %>
+
+
+			</div><!-- #process-content -->
+
+			
+			<div class="clear"></div>
+		</div><!-- .fixed -->
+	</div><!-- #departure -->

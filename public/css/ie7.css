@@ -1,0 +1,13 @@
+/* CSS Hacks For IE 7 */
+
+fieldset.depfield legend, fieldset.arvfield legend, #process-content fieldset legend {
+	margin: 0 0 0 -7px !important;
+	}
+
+#process-content fieldset:first-child, .submit-container:first-child {
+	margin-top: -60px !important;
+	}
+
+fieldset.contact-join {
+	margin-top: -60px !important;
+	}
